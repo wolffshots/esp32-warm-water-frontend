@@ -1,0 +1,42 @@
+{
+  "name": "esp32-warm-water-front",
+  "version": "1.0.0",
+  "description": "webui for interfacing with esp32-warm-water project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolffshots/esp32-warm-water-frontend.git"
+  },
+  "author": "wolffshots",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wolffshots/esp32-warm-water-frontend/issues"
+  },
+  "homepage": "https://github.com/wolffshots/esp32-warm-water-frontend#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "rollup": "^2.56.2",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^3.42.2",
+    "typescript": "^4.0.0",
+    "svelte-check": "^2.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "@rollup/plugin-typescript": "^8.0.0",
+    "tslib": "^2.0.0",
+    "@tsconfig/svelte": "^2.0.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^1.0.14"
+  }
+}
