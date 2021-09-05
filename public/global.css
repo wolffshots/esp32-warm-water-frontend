@@ -1,11 +1,11 @@
 @font-face {
   font-family: "overpass-mono";
-  src: url("overpass-mono.otf") format("otf");
+  src: url("overpass-mono.otf") format("opentype");
 }
 
 @font-face {
   font-family: "overpass";
-  src: url("overpass-regular.otf") format("otf");
+  src: url("overpass-regular.otf") format("opentype");
 }
 
 html,

@@ -108,13 +108,13 @@
       [temp, goal, lowerMrgn, upperMrgn] = [-15, 25, 0.5, 0.5];
     }
   };
-  let intervalId = setInterval(() => update(), 3000);
+  setInterval(() => update(), 3000);
 </script>
 
 <main>
   <h1>warm water</h1>
   <p>let's get some temperature regulated</p>
-  <div class="outputs">
+  <div class="outputs max-600">
     <div class="output-block">
       <div class="output-block output-subblock">
         goal:
@@ -138,7 +138,7 @@
       </div>
     </div>
   </div>
-  <div class="buttons">
+  <div class="buttons max-600">
     <Button tall onClick={setTemp} value="set temp" id="setTempBtn" />
     <Button onClick={setUpperMrgn} value="set upper" id="setUpperMrgnBtn" />
     <Button onClick={setLowerMrgn} value="set lower" id="setLowerMrgnBtn" />
@@ -159,11 +159,13 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .max-600{
+    max-width: 600px;
+  }
   .buttons {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 0.5rem;
-    max-width: 600px;
     width: 100%;
     padding-bottom: 10vh;
     font-weight: 400;
